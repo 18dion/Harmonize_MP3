@@ -18,7 +18,7 @@
             <Pane layoutX="9.0" layoutY="410.0" prefHeight="78.0" prefWidth="770.0" style="-fx-background-color: #F9EA63;">
                <children>
                   <ProgressBar fx:id="progressBar" layoutX="195.0" layoutY="18.0" prefHeight="6.0" prefWidth="515.0" progress="0.0" style="-fx-background-color: black;" />
-                  <Button fx:id="playButton" layoutX="430.0" layoutY="33.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+                  <Button fx:id="playButton" layoutX="430.0" layoutY="33.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" onAction="#handlePlayButtonAction">
                      <graphic>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -55,7 +55,7 @@
                         </ImageView>
                      </graphic>
                   </Button>
-                  <Button fx:id="pauseButton" layoutX="259.0" layoutY="32.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="46.0">
+                  <Button fx:id="pauseButton" layoutX="259.0" layoutY="32.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="46.0" onAction="#handlePauseButtonAction">
                      <graphic>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
