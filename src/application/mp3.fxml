@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-9.0" prefHeight="470.0" prefWidth="778.0" style="-fx-background-color: #262121;">
+         <children>
+            <Pane layoutX="9.0" layoutY="410.0" prefHeight="78.0" prefWidth="770.0" style="-fx-background-color: #F9EA63;">
+               <children>
+                  <ProgressBar fx:id="progressBar" layoutX="195.0" layoutY="18.0" prefHeight="6.0" prefWidth="515.0" progress="0.0" style="-fx-background-color: black;" />
+                  <Button fx:id="playButton" layoutX="430.0" layoutY="33.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" onAction="#handlePlayButtonAction">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@play.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  
+                  <Button layoutX="340.0" layoutY="33.0" maxWidth="30.0" mnemonicParsing="false" prefHeight="30.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@back.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="520.0" layoutY="33.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="46.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@forward.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="195.0" layoutY="33.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="46.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@shuffle.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     </Button>
+                  <Button fx:id="pauseButton" layoutX="259.0" layoutY="32.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="46.0" onAction="#handlePauseButtonAction">
+    <graphic>
+        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pause.png" />
+            </image>
+        </ImageView>
+    </graphic>
+</Button>
+
+               </children>
+            </Pane>
+            <ImageView fitHeight="232.0" fitWidth="294.0" layoutX="345.0" layoutY="100.0" opacity="0.46" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Hlogo.png" />
+               </image>
+               <effect>
+                  <BoxBlur />
+               </effect>
+            </ImageView>
+            <Pane layoutY="22.0" prefHeight="387.0" prefWidth="146.0" style="-fx-background-color: #262121;" styleClass="application/application.css" AnchorPane.bottomAnchor="78.0" AnchorPane.topAnchor="0.0">
+               <children>
+                 <Button fx:id="importButton" layoutX="25.0" layoutY="30.0" mnemonicParsing="false" onAction="#handleImportButtonAction" prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: #262121; -fx-text-fill: white;" text="IMPORT">
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect></Button>
+                  <Button fx:id="searchButton" layoutX="25.0" layoutY="90.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: #262121;-fx-text-fill: white;" text="SEARCH">
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect></Button>
+                  <Button fx:id="playlistsButton" layoutX="25.0" layoutY="270.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: #262121;-fx-text-fill: white;" text="PLAYLISTS">
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect></Button>
+                  <Button fx:id="favoritesButton" layoutX="25.0" layoutY="150.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: #262121;-fx-text-fill: white;" text="FAVORITES">
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect></Button>
+                  <Button fx:id="addPlaylistButton" layoutX="25.0" layoutY="210.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="101.0" style="-fx-background-color: #262121;-fx-text-fill: white;" text="ADD PLAYLIST">
+                     <effect>
+                        <Glow level="1.0" />
+                     </effect>
+                  </Button>
+               </children>
+               <effect>
+                  <InnerShadow />
+               </effect>
+            </Pane>
+            <ListView layoutX="165.0" layoutY="22.0" opacity="0.41" prefHeight="367.0" prefWidth="594.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
